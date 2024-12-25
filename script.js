@@ -7,7 +7,7 @@ let isGenerating = false;
 const API_CONFIG = {
     'workers-api': {
         url: 'https://ttsapi.gebi.workers.dev/tts',
-        authToken: 'shayebushiapi'
+        authToken: process.env.T_TOKEN
     },
     'deno-api': {
         url: 'https://deno-tts.api.zwei.de.eu.org/tts'
