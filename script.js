@@ -7,7 +7,7 @@ let isGenerating = false;
 const API_CONFIG = {
     'workers-api': {
         url: 'https://ttsapi.gebi.workers.dev/tts',
-        authToken: 'shayebushiapi'
+        authToken: 'alsjfjfal78794'
     },
     'deno-api': {
         url: 'https://deno-tts.api.zwei.de.eu.org/tts'
@@ -258,7 +258,7 @@ async function makeRequest(url, isPreview, text, isDenoApi, requestId = '') {
         
         // 如果是 workers-api，添加认证头
         if (apiName === 'workers-api') {
-            headers['x-api-key'] = API_CONFIG[apiName].authToken;
+            headers['x-auth-token'] = API_CONFIG[apiName].authToken;
         }
 
         const response = await fetch(url, { 
