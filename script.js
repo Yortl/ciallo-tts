@@ -258,7 +258,7 @@ async function makeRequest(url, isPreview, text, isDenoApi, requestId = '') {
         
         // 如果是 workers-api，添加认证头
         if (apiName === 'workers-api') {
-            headers['x-auth-token'] = API_CONFIG[apiName].authToken;
+            headers['x-api-key'] = API_CONFIG[apiName].authToken;
         }
 
         const response = await fetch(url, { 
