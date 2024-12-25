@@ -4,10 +4,13 @@ let currentAudioURL = null;
 let requestCounter = 0;
 let isGenerating = false;
 
+// 从环境变量中获取 AUTH_TOKEN
+const AUTH_TOKEN = process.env.AUTH_TOKEN;
+
 const API_CONFIG = {
     'workers-api': {
         url: 'https://ttsapi.gebi.workers.dev/tts',
-        authToken: 'alsjfjfal78794'
+        authToken: AUTH_TOKEN
     },
     'deno-api': {
         url: 'https://deno-tts.api.zwei.de.eu.org/tts'
