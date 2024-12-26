@@ -1,4 +1,5 @@
 /*
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
+  Cache-Control: no-store; no-cache; must-revalidate
   Content-Security-Policy:script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdnjs.cloudflare.com https://maxcdn.bootstrapcdn.com; style-src 'self' 'unsafe-inline' https://maxcdn.bootstrapcdn.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; media-src 'self' blob: https:; font-src 'self' https://cdnjs.cloudflare.com; 
