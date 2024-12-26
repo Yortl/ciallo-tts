@@ -257,7 +257,7 @@ async function makeRequest(url, isPreview, text, isDenoApi, requestId = '') {
             'Content-Type': 'application/json'
         };
         
-        // 如果是 workers-api，添加认证头
+        // 如果是 workers-api，添加认证头tts-api
         if (apiName === 'workers-api') {
             headers['x-auth-token'] = API_CONFIG[apiName].authToken;
         }
