@@ -7,7 +7,7 @@ let isGenerating = false;
 
 const API_CONFIG = {
     'workers-api': {
-        url: 'https://ttsapi.gebi.workers.dev/tts',
+        url: 'https://ttsapi.yort.de/tts',
         authToken: 'alsjfjfal78794'
     },
     'deno-api': {
